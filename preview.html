@@ -1,140 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deposit Page</title>
 
     <!-- WhatsApp Button Script -->
     <script type="text/javascript">
-        (function () {
-            var options = {
-                whatsapp: "+13322524336", 
-                call_to_action: "Message us",
-                position: "left",
-            };
-            var proto = document.location.protocol,
-                host = "getbutton.io",
-                url = proto + "//static." + host;
-            var s = document.createElement("script");
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = url + "/widget-send-button/js/init.js";
-            s.onload = function () {
-                WhWidgetSendButton.init(host, proto, options);
-            };
-            var x = document.getElementsByTagName("script")[0];
-            x.parentNode.insertBefore(s, x);
-        })();
+      (function () {
+        var options = {
+          whatsapp: "+13322524336",
+          call_to_action: "Message us",
+          position: "left",
+        };
+        var proto = document.location.protocol,
+          host = "getbutton.io",
+          url = proto + "//static." + host;
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = url + "/widget-send-button/js/init.js";
+        s.onload = function () {
+          WhWidgetSendButton.init(host, proto, options);
+        };
+        var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      })();
     </script>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #06154B;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #06154b;
+      }
 
-        .container {
-            width: 90%;
-            max-width: 450px;
-            margin: 50px auto;
-            text-align: center;
-        }
+      .container {
+        width: 90%;
+        max-width: 450px;
+        margin: 50px auto;
+        text-align: center;
+      }
 
-        .top-message {
-            background-color: #E3A135;
-            color: white;
-            padding: 15px;
-            font-size: 14px;
-            border-radius: 6px;
-            font-weight: 500;
-            margin-bottom: 25px;
-        }
+      .top-message {
+        background-color: #e3a135;
+        color: white;
+        padding: 15px;
+        font-size: 14px;
+        border-radius: 6px;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
 
-        .card {
-            background: white;
-            padding: 25px 15px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
+      .card {
+        background: white;
+        padding: 25px 15px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
 
-        .crypto-icon img {
-            width: 80px;
-            margin-bottom: 15px;
-        }
+      .crypto-icon img {
+        width: 80px;
+        margin-bottom: 15px;
+      }
 
-        .info-box {
-            width: 100%;
-            border: 1px solid #e6e6e6;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
+      .info-box {
+        width: 100%;
+        border: 1px solid #e6e6e6;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
 
-        .info-box div {
-            padding: 10px 0;
-            font-size: 15px;
-            border-bottom: 1px solid #eee;
-        }
+      .info-box div {
+        padding: 10px 0;
+        font-size: 15px;
+        border-bottom: 1px solid #eee;
+      }
 
-        .info-box div:last-child {
-            border-bottom: none;
-        }
+      .info-box div:last-child {
+        border-bottom: none;
+      }
 
-        .btn-link {
-            display: block;
-            width: 100%;
-            text-align: center;
-            background-color: #D4A046;
-            color: black;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 13px 0;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+      .btn-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: #d4a046;
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 13px 0;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
 
-        .btn-link:hover {
-            background-color: #bb8b3c;
-        }
+      .btn-link:hover {
+        background-color: #bb8b3c;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
+      <!-- TOP MESSAGE -->
+      <div class="top-message">
+        Welcome to your deposit area, kindly click on the "confirm" button down
+        below to process your deposit.
+      </div>
 
-        <!-- TOP MESSAGE -->
-        <div class="top-message">
-            Welcome to your deposit area, kindly click on the "confirm" button down below to process your deposit.
+      <!-- MAIN CARD -->
+      <div class="card">
+        <div class="crypto-icon">
+          <img
+            src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=029"
+            alt="Bitcoin Logo"
+          />
         </div>
 
-        <!-- MAIN CARD -->
-        <div class="card">
-
-            <div class="crypto-icon">
-                <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=029" alt="Bitcoin Logo">
-            </div>
-
-            <div class="info-box">
-                <div>Amount: <strong>33 USD</strong></div>
-                <div>Charge: <strong>0 USD</strong></div>
-                <div>Payable: <strong>33 USD</strong></div>
-            </div>
-
-            <!-- Confirm Button → Goes to manual.html -->
-            <a href="manual.html" class="btn-link">Confirm</a>
-
+        <div class="info-box">
+          <div>
+            Amount: <strong><span id="amountValue"></span> USD</strong>
+          </div>
+          <div>Charge: <strong>0 USD</strong></div>
+          <div>
+            Payable: <strong><span id="payableValue"></span> USD</strong>
+          </div>
         </div>
 
+        <!-- Confirm Button → Goes to manual.html -->
+        <a href="manual.html" class="btn-link">Confirm</a>
+      </div>
     </div>
 
-</body>
+    <script>
+      const amount = localStorage.getItem("depositAmount") || "0";
+      document.getElementById("amountValue").textContent = amount;
+      document.getElementById("payableValue").textContent = amount;
+    </script>
+  </body>
 </html>
