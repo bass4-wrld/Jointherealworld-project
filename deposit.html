@@ -1,9 +1,3 @@
-
-
-
-
-
-
         </div>
       </div>
                                             </div>
@@ -150,7 +144,6 @@
 
   <body>
   
-    
   
     <!-- scroll-to-top start -->
     <!---<div class="scroll-to-top">
@@ -494,7 +487,7 @@ function googleTranslateElementInit() {
 
 
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content modal-content-bg">
                 <div class="modal-header">
@@ -528,7 +521,52 @@ function googleTranslateElementInit() {
         </div>
     </div>
 
-    
+     -->
+
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-content-bg">
+            <div class="modal-header">
+                <strong class="modal-title method-name text-white" id="exampleModalLabel"></strong>
+                <a href="javascript:void(0)" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+
+            <form action="preview.html" method="post" class="register" onsubmit="saveAmount()">
+                <input type="hidden" name="_token" value="GlRDZ7MNAMaeuS8C1F7E6Fw7FzTsqVPsJog2hc0D">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="hidden" name="currency" class="edit-currency" value="">
+                        <input type="hidden" name="method_code" class="edit-method-code" value="">
+                    </div>
+
+                    <div class="package-card__range mt-5 base--color">
+                        <label>Enter Amount:</label>
+                        <div class="input-group">
+                            <input id="amount" type="text" class="package-card__range mt-5 base--color" name="amount" placeholder="0.00" required autocomplete="off">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text currency-addon addon-bg"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-danger" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn-md cmn-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function saveAmount() {
+        var amount = document.getElementById("amount").value;
+        localStorage.setItem("depositAmount", amount);
+    }
+</script>
 
    
   </div> <!-- page-wrapper end -->
