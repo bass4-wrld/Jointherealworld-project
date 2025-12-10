@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <!-- Smartsupp Live Chat script -->
+      <title>dashboard</title>
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
 _smartsupp.key = '472fc2bba9fa7b7c0addfecc92441682e6d87e01';
@@ -136,24 +137,8 @@ window.smartsupp||(function(d) {
         stroke:white;
       }
     }
-<!--  </style>-->
-<!--<div class="_splash">-->
-<!--<center>-->
-<!--<svg version="1.1" id="Layer_121" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="200px" viewBox="100 100 400 400" xml:space="preserve">-->
-<!--<filter id="dropshadow" height="130%">-->
-<!--<feGaussianBlur in="SourceAlpha" stdDeviation="5" />-->
-<!--<feOffset dx="0" dy="0" result="offsetblur" />-->
-<!--<feFlood flood-color="red" />-->
-<!--<feComposite in2="offsetblur" operator="in" />-->
-<!--<feMerge>-->
-<!--<feMergeNode />-->
-<!--<feMergeNode in="SourceGraphic" />-->
-<!--</feMerge>-->
-<!--</filter>-->
-<!--<img src="/Spin.svg">-->
-<!--</svg>-->
-<!--</center>-->
-<!--</div>-->
+</style>
+
 <style type="text/css">
     .body {
     margin: 0;
@@ -307,7 +292,7 @@ window.smartsupp||(function(d) {
 <li class="dropdown dropdown-user">
 <a class="nav-link dropdown-toggle link" data-toggle="dropdown" style="color: orange !important;">
 <img src="images/admin-avatar.png" />
-<span></span>Hi!, Rrry<i class="fa fa-angle-down m-l-5"></i></a>
+Trader <span id="showUsername"></span><i class="fa fa-angle-down m-l-5"></i></a>
 <ul class="dropdown-menu dropdown-menu-right">
 
 
@@ -323,7 +308,6 @@ window.smartsupp||(function(d) {
 </div>
 </header>
 
-
 <nav class="page-sidebar" id="sidebar">
 <div id="sidebar-collapse">
 <div class="admin-block d-flex">
@@ -331,18 +315,18 @@ window.smartsupp||(function(d) {
 <img src="images/admin-avatar.png" width="45px" />
 </div>
 <div class="admin-info">
-<div class="font-strong">Samuel Heritage</div>
+<div class="font-strong"><span id="fullName"></span>
  </div>
 </div>
 <ul class="side-menu metismenu">
 <li>
-<a href="dashboard.html"><i style="color: orange !important;" class="sidebar-item-icon fa fa-home"></i>
+<a href="userdashboard.html"><i style="color: orange !important;" class="sidebar-item-icon fa fa-home"></i>
 <span class="nav-label">Home</span>
 </a>
 </li>
 <li class="heading">FEATURES</li>
 <li>
-<a href="dashboard.html"><i style="color: orange !important;" class="sidebar-item-icon fas fa-signal"></i>
+<a href="userdashboard.html"><i style="color: orange !important;" class="sidebar-item-icon fas fa-signal"></i>
 <span class="nav-label">Trade Center</span>
 </a>
 </li>
@@ -395,7 +379,13 @@ window.smartsupp||(function(d) {
 </ul>
 </div>
 </nav>
+<script>
+document.getElementById("fullName").innerText =
+    localStorage.getItem("fullname");
 
+document.getElementById("showUsername").innerText =
+    localStorage.getItem("username");
+</script>
 <div class="content-wrapper">
 <style type="text/css">
                     .tradingview-widget-copyright, .button-1dpg_T2E-, .button--right-2CEhpGhn-{
@@ -576,7 +566,7 @@ BTC/USD Chart
                             margin-left: 10px;
                         }
                     </style>
-</div>
+
 
 <footer class="page-footer" style="background: #1d1d1d;">
 <div class="font-13" style="color: orange;"> © <b style="color: orange;">Join The Real World Network</b> - All rights reserved.</div>
@@ -707,7 +697,6 @@ BTC/USD Chart
 <script src="dashboard css/dashboard_1_demo.js" type="text/javascript"></script>
 
 
-    </script> -->
 <style type="text/css">
       .swal2-content{
         font-size: unset !important;
