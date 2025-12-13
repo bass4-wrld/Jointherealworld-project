@@ -366,7 +366,7 @@
                     </label>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-info btn-block" onclick="location.href='userdashboard.html'" value="Register" type="submit">Sign up</button>
+                    <button class="btn btn-info btn-block"  onclick="registerUser()" onclick="location.href='userdashboard.html'" value="Register" type="submit">Sign up</button>
                 </div>
                 <!--<div class="social-auth-hr" style="color:#fff;">-->
                 <!--    <span>Or Sign up with</span>-->
@@ -405,7 +405,7 @@
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus distinctio deserunt impedit similique debitis voluptatum enim.</p>
                             </div>
                             <div class="account-card__body">
-                                <form action="userdashboard.html" class="mt-4" onsubmit="return submitUserForm();" method="post">
+                                <form action="userdashboard.html" onclick="registerUser()" class="mt-4" onsubmit="return submitUserForm();" method="post">
                                     <input type="hidden" name="_token" value="fku218kUeZYWsuCeMgNjCDB0E402lQaYLJtqoN8Y">
                                     <div class="form-group">
                                         <label>First Name</label>

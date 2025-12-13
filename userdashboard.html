@@ -292,11 +292,11 @@ window.smartsupp||(function(d) {
 <li class="dropdown dropdown-user">
 <a class="nav-link dropdown-toggle link" data-toggle="dropdown" style="color: orange !important;">
 <img src="images/admin-avatar.png" />
-Trader <span id="showUsername"></span><i class="fa fa-angle-down m-l-5"></i></a>
+Hi, <span id="fullName"></span><i class="fa fa-angle-down m-l-5"></i></a>
 <ul class="dropdown-menu dropdown-menu-right">
 
 
-<a class="dropdown-item" href="mail:support@jointherealworldnetwork.com" target="_blank"><i class="fa fa-life-ring"></i>Support</a>
+<a class="dropdown-item" href="mail:jointherealworldofficialsite@gmail.com" target="_blank"><i class="fa fa-life-ring"></i>Support</a>
 <li class="dropdown-divider"></li>
 <a class="dropdown-item" href="index.html"><i class="fa fa-power-off"></i>Logout</a>
 </ul>
@@ -308,6 +308,7 @@ Trader <span id="showUsername"></span><i class="fa fa-angle-down m-l-5"></i></a>
 </div>
 </header>
 
+
 <nav class="page-sidebar" id="sidebar">
 <div id="sidebar-collapse">
 <div class="admin-block d-flex">
@@ -315,7 +316,7 @@ Trader <span id="showUsername"></span><i class="fa fa-angle-down m-l-5"></i></a>
 <img src="images/admin-avatar.png" width="45px" />
 </div>
 <div class="admin-info">
-<div class="font-strong"><span id="fullName"></span>
+<div class="font-strong"><span id="showUsername"></span></div>
  </div>
 </div>
 <ul class="side-menu metismenu">
@@ -331,7 +332,7 @@ Trader <span id="showUsername"></span><i class="fa fa-angle-down m-l-5"></i></a>
 </a>
 </li>
 <li>
-<a href="deposit.html"><i style="color: orange !important;" class="sidebar-item-icon fas fa-money-bill-wave"></i>
+<a href="deposit.html"><i style="color: orange !important;" class="sidebar-item-icon fas fa-dollar-sign"></i>
 <span class="nav-label">Fund Account</span>
 </a>
 </li>
@@ -379,13 +380,15 @@ Trader <span id="showUsername"></span><i class="fa fa-angle-down m-l-5"></i></a>
 </ul>
 </div>
 </nav>
+
 <script>
-document.getElementById("fullName").innerText =
+document.getElementById("fullname").innerText =
     localStorage.getItem("fullname");
 
-document.getElementById("showUsername").innerText =
+document.getElementById("username").innerText =
     localStorage.getItem("username");
 </script>
+
 <div class="content-wrapper">
 <style type="text/css">
                     .tradingview-widget-copyright, .button-1dpg_T2E-, .button--right-2CEhpGhn-{
@@ -440,7 +443,7 @@ Document verification is required to complete registration click <a href="#">her
 <div class="ibox bg-info color-white widget-stat" style="background: blue !important; border-radius: 10px;">
 <div class="ibox-body">
 <h2 class="m-b-5 font-strong"> $0 </h2>
-<div class="m-b-5">BALANCE</div><i class="fas fa-chart-bar widget-stat-icon"></i>
+<div class="m-b-5">BALANCE</div><i class="fas fa-chart-bar widget-stat-icon" style="font-size: 35px; margin-top: 40px;"></i>
 <div><i class="fas fa-level-up-alt m-r-5"></i><small>72% higher</small></div>
 </div>
  </div>
@@ -449,7 +452,7 @@ Document verification is required to complete registration click <a href="#">her
 <div class="ibox bg-success color-white widget-stat" style="background: green; !important; border-radius: 10px;">
 <div class="ibox-body">
 <h2 class="m-b-5 font-strong">$0</h2>
-<div class="m-b-5">All-time PROFIT</div><i class="fas fa-dollar-sign widget-stat-icon"></i>
+<div class="m-b-5">All-time PROFIT</div><i class="fas fa-dollar-sign widget-stat-icon" style="font-size: 35px; margin-top: 40px;"></i>
 <div><i class="fas fa-level-up-alt m-r-5"></i><small>26% higher</small></div>
 </div>
 </div>
@@ -459,7 +462,7 @@ Document verification is required to complete registration click <a href="#">her
 <div class="ibox bg-warning color-black widget-stat" style="background: yellow; !important; border-radius: 10px;">
 <div class="ibox-body">
 <h2 class="m-b-5 font-strong">$0</h2>
-<div class="m-b-5">INVESTED</div><i class="fas fa-money-bill-wave widget-stat-icon"></i>
+<div class="m-b-5">INVESTED</div><i class="fas fa-money-bill-wave widget-stat-icon" style="font-size: 35px; margin-top: 40px;"></i>
 <div><i class="fas fa-level-up-alt m-r-5"></i><small>33% higher</small></div>
 </div>
 </div>
@@ -468,7 +471,7 @@ Document verification is required to complete registration click <a href="#">her
 <div class="ibox bg-info color-white widget-stat" style="background: teal !important; border-radius: 10px;">
 <div class="ibox-body">
 <h2 class="m-b-5 font-strong btc__">0</h2>
-<div class="m-b-5">BONUS</div><i class="fas fa-chart-bar widget-stat-icon"></i>
+<div class="m-b-5">BONUS</div><i class="fas fa-chart-bar widget-stat-icon" style="font-size: 35px; margin-top: 40px;"></i>
 <div><i class="fas fa-level-up-alt m-r-5"></i><small>45% higher</small></div>
 </div>
 </div>
@@ -477,7 +480,7 @@ Document verification is required to complete registration click <a href="#">her
 <div class="ibox bg-danger color-white widget-stat" style="background: #756dc0 !important; border-radius: 10px;">
 <div class="ibox-body">
 <h2 class="m-b-5 font-strong">8170</h2>
-<div class="m-b-5">LIVE TRADERS</div><i class="fas fa-chart-line widget-stat-icon"></i>
+<div class="m-b-5">LIVE TRADERS</div><i class="fas fa-chart-line widget-stat-icon" style="font-size: 35px; margin-top: 40px;"></i>
 <div><i class="fas fa-level-up-alt m-r-5"></i><small>49% Total Users</small></div>
 </div>
 </div>
@@ -486,7 +489,7 @@ Document verification is required to complete registration click <a href="#">her
 <div class="ibox bg-danger color-white widget-stat" style="background: #876e14 !important; border-radius: 10px;">
 <div class="ibox-body">
 <h2 class="m-b-5 font-strong">Starter</h2>
-<div class="m-b-5">ACCOUNT LEVEL</div><i class="fas fa-chart-line widget-stat-icon"></i>
+<div class="m-b-5">ACCOUNT LEVEL</div><i class="fas fa-chart-line widget-stat-icon" style="font-size: 35px; margin-top: 40px;"></i>
 <div><i class="fas fa-level-up-alt m-r-5"></i><small>55% Positive</small></div>
 </div>
 </div>
@@ -497,7 +500,7 @@ Document verification is required to complete registration click <a href="#">her
 <h2 class="m-b-5 font-strong">Notification</h2>
 <div class="m-b-5">
   No Notification Yet
-</div><i class="fas fa-chart-line widget-stat-icon"></i>
+</div><i class="fas fa-chart-line widget-stat-icon" style="font-size: 35px; margin-top: 40px;"></i>
 <div></div>
 </div>
 </div>
